@@ -804,8 +804,10 @@
 					"COCOS2D_DEBUG=1",
 					USE_FILE32API,
 					"CC_LUA_ENGINE_ENABLED=1",
-					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
 					GLFW_EXPOSE_NATIVE_COCOA,
+					LUA_COMPAT_5_1,
+					LUA_COMPAT_APIINTCASTS,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -819,7 +821,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../../engine/frameworks/cocos2d-x $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos/audio/include $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/extensions $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external/lua/luajit/include $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external/lua/tolua $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/tools/simulator/libsimulator/lib $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/tools/simulator/libsimulator/lib/protobuf-lite $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos/editor-support";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../../engine/frameworks/cocos2d-x $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos/audio/include $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/extensions $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external/lua/tolua $(SRCROOT)/../../../../3rd/lua_5_3/ $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/tools/simulator/libsimulator/lib $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/tools/simulator/libsimulator/lib/protobuf-lite $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos/editor-support";
 			};
 			name = Debug;
 		};
@@ -853,7 +855,9 @@
 					NDEBUG,
 					USE_FILE32API,
 					"CC_LUA_ENGINE_ENABLED=1",
-					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
+					LUA_COMPAT_5_1,
+					LUA_COMPAT_APIINTCASTS,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -866,7 +870,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../../engine/frameworks/cocos2d-x $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos/audio/include $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/extensions $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external/lua/luajit/include $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external/lua/tolua $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/tools/simulator/libsimulator/lib $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/tools/simulator/libsimulator/lib/protobuf-lite $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos/editor-support";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../../engine/frameworks/cocos2d-x $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos/audio/include $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/extensions $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/external/lua/tolua $(SRCROOT)/../../../../3rd/lua_5_3/ $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/tools/simulator/libsimulator/lib $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/tools/simulator/libsimulator/lib/protobuf-lite $(SRCROOT)/../../../../engine/frameworks/cocos2d-x/cocos/editor-support";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
